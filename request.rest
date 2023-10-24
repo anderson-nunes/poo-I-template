@@ -1,0 +1,26 @@
+GET http://localhost:3003/users
+###
+
+POST http://localhost:3003/users
+Content-Type: application/json
+
+  {
+    "id": "u003",
+    "name": "Ciclano",
+    "email": "ciclano@email.com",
+    "password": "21239212"
+  }
+###
+
+GET http://localhost:3003/accounts
+###
+
+POST http://localhost:3003/accounts
+Content-Type: application/json
+
+  {
+    "id": "a003",
+    "ownerId": "u003"  
+  }
+###
+
